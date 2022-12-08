@@ -65,4 +65,4 @@ INSERT INTO Product VALUES (30, 7, 12, 'Juice', 2.99, 'Orange juice', 42);
 
 INSERT INTO Order_Items VALUES(1, 1, 5, 4);
 INSERT INTO Order_Items VALUES(3, 1, 3, 10);
-INSERT INTO order_items VALUES()
+INSERT INTO order_items VALUES(27, 1, 50, 4);
