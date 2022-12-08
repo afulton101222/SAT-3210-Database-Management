@@ -19,6 +19,7 @@ INSERT INTO Manufacturer VALUES (2, 'Veggie Co.', 'David Smith', 'david.smith@ve
 INSERT INTO Manufacturer VALUES (3, 'Berry Co.', 'Emily Brown', 'emily.brown@berryco.com', '555-555-1234');
 INSERT INTO Manufacturer VALUES (4, 'Root Co.', 'Michael Lee', 'michael.lee@rootco.com', '555-555-1235');
 INSERT INTO Manufacturer VALUES (5, 'Cruciferous Co.', 'Sarah Wilson', 'sarah.wilson@cruciferousco.com', '555-555-1236');
+INSERT INTO Manufacturer VALUES (7, 'Prestine Farms', 'Alex Prestine', 'alex@prestinefarms.net', '555-555-9000');
 INSERT INTO Manufacturer VALUES (6, 'Meat Co.', 'James Taylor', 'james.taylor@meatco.com', '555-555-1237');
 INSERT INTO Manufacturer VALUES (8, 'Seafood Co.', 'Robert Jones', 'robert.jones@seafoodco.com', '555-555-1239');
 INSERT INTO Manufacturer VALUES (9, 'Grain Co.', 'Samantha Johnson', 'samantha.johnson@grainco.com', '555-555-1240');
