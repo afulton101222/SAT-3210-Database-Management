@@ -65,7 +65,7 @@ CREATE TABLE product (
     product_description text,
     quantity int(11) check (quantity > 0),
     PRIMARY KEY (product_id),
-    foreign key (category_id) references category (Category_id)
+    foreign key (category_id) references category (category_id)
         on delete set null,
     foreign key (manufacturer_id) references manufacturer (manufacturer_id)
         on delete set null
