@@ -73,7 +73,7 @@ CREATE TABLE product (
 
 -- Create Order_Items Table
 
-CREATE TABLE order_Items (
+CREATE TABLE order_items (
     product_id int(11),
     order_id int(11),
     quantity int(11) DEFAULT '0',
@@ -83,3 +83,4 @@ CREATE TABLE order_Items (
     foreign key (order_id) references orders (order_id)
         on delete set null
 );
+
