@@ -12,8 +12,6 @@ INSERT INTO Category VALUES (7, 'Beverage');
 
 
 INSERT INTO Orders VALUES (1, '2022-11-12 19:28:00', 9.38, 11111328);
-INSERT INTO Orders VALUES (2, '2022-14-12 19:28:00', 78.38, 11111328);
-
 
 
 INSERT INTO Manufacturer VALUES (1, 'Fruit Co.', 'Samantha Jones', 'samantha.jones@fruitco.com', '555-555-1232');
@@ -67,7 +65,4 @@ INSERT INTO Product VALUES (30, 7, 12, 'Juice', 2.99, 'Orange juice', 42);
 
 INSERT INTO Order_Items VALUES(1, 1, 5, 4);
 INSERT INTO Order_Items VALUES(3, 1, 3, 10);
-INSERT INTO order_items VALUES(27,2,4,2);
-INSERT INTO order_items VALUES(7,2,4,2);
-INSERT INTO order_items VALUES(2,2,4,2);
-INSERT INTO order_items VALUES(17,2,4,2);
+INSERT INTO order_items VALUES()
