@@ -23,7 +23,10 @@ INSERT INTO Manufacturer VALUES (7, 'Prestine Farms', 'Alex Prestine', 'alex@pre
 INSERT INTO Manufacturer VALUES (6, 'Meat Co.', 'James Taylor', 'james.taylor@meatco.com', '555-555-1237');
 INSERT INTO Manufacturer VALUES (8, 'Seafood Co.', 'Robert Jones', 'robert.jones@seafoodco.com', '555-555-1239');
 INSERT INTO Manufacturer VALUES (9, 'Grain Co.', 'Samantha Johnson', 'samantha.johnson@grainco.com', '555-555-1240');
-INSERT INTO Manufacturer VALUES (10, 'Bakery Co.', 'Emily Brown', 'emily.brown@bakeryco.com', '555-555-1243');
+INSERT INTO Manufacturer VALUES (10, 'Bakery Co.', 'Emily Brown', 'emily.brown@bakeryco.com', '555-545-1243');
+INSERT INTO Manufacturer VALUES (11, 'Frozen Goods Co.', 'Deb Brown', 'deb.brown@frozengoods.com', '555-645-1243');
+INSERT INTO Manufacturer VALUES (12, 'Pepsi Co.', 'Wallace Southerland III', 'WallaceIII@PepsiCo.com', '555-649-1243');
+
 
 
 INSERT INTO Product VALUES (1, 1, 1, 'Apple', 0.99, 'Red Delicious apple', 25);
@@ -46,16 +49,16 @@ INSERT INTO Product VALUES (17, 4, 9, 'Pasta', 1.99, 'Spaghetti pasta', 23);
 INSERT INTO Product VALUES (18, 4, 9, 'Rice', 1.49, 'White jasmine rice', 19);
 INSERT INTO Product VALUES (19, 4, 10, 'Bread', 2.49, 'Sliced white bread', 43);
 INSERT INTO Product VALUES (20, 4, 10, 'Tortillas', 1.99, 'Flour tortillas', 27);
-INSERT INTO Product VALUES (21, 5, 11, 'Milk', 2.99, 'Whole milk', 23);
-INSERT INTO Product VALUES (22, 5, 11, 'Eggs', 2.49, 'Large eggs', 43);
-INSERT INTO Product VALUES (23, 5, 12, 'Butter', 3.49, 'Unsalted butter', 32);
-INSERT INTO Product VALUES (24, 5, 12, 'Cheese', 4.99, 'Shredded cheddar cheese', 42);
-INSERT INTO Product VALUES (25, 6, 13, 'Yogurt', 1.79, 'Plain yogurt', 53);
-INSERT INTO Product VALUES (26, 6, 13, 'Cottage cheese', 2.49, 'Low-fat cottage cheese', 66);
-INSERT INTO Product VALUES (27, 6, 14, 'Ice cream', 3.99, 'Vanilla ice cream', 123);
-INSERT INTO Product VALUES (28, 6, 14, 'Sorbet', 2.99, 'Lemon sorbet', 42);
-INSERT INTO Product VALUES (29, 7, 15, 'Soda', 1.49, 'Coca-Cola', 21);
-INSERT INTO Product VALUES (30, 7, 15, 'Juice', 2.99, 'Orange juice', 42)
+INSERT INTO Product VALUES (21, 5, 7, 'Milk', 2.99, 'Whole milk', 23);
+INSERT INTO Product VALUES (22, 5, 7, 'Eggs', 2.49, 'Large eggs', 43);
+INSERT INTO Product VALUES (23, 5, 7, 'Butter', 3.49, 'Unsalted butter', 32);
+INSERT INTO Product VALUES (24, 5, 7, 'Cheese', 4.99, 'Shredded cheddar cheese', 42);
+INSERT INTO Product VALUES (25, 6, 7, 'Yogurt', 1.79, 'Plain yogurt', 53);
+INSERT INTO Product VALUES (26, 6, 7, 'Cottage cheese', 2.49, 'Low-fat cottage cheese', 66);
+INSERT INTO Product VALUES (27, 6, 7, 'Ice cream', 3.99, 'Vanilla ice cream', 123);
+INSERT INTO Product VALUES (28, 6, 11, 'Sorbet', 2.99, 'Lemon sorbet', 42);
+INSERT INTO Product VALUES (29, 7, 12, 'Soda', 1.49, 'Coca-Cola', 21);
+INSERT INTO Product VALUES (30, 7, 12, 'Juice', 2.99, 'Orange juice', 42);
 
 
 
