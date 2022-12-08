@@ -61,7 +61,7 @@ CREATE TABLE product (
     category_id int(11),
     manufacturer_id int(11),
     product_name varchar(100),
-    price double check (quantity > 0),
+    price double check (price > 0),
     product_description text,
     quantity int(11) check (quantity > 0),
     PRIMARY KEY (product_id),
