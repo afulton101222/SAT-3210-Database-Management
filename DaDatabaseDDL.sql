@@ -38,7 +38,7 @@ CREATE TABLE category (
 CREATE TABLE orders (
     order_id int(11),
     order_time datetime,
-    total double DEFAULT '0',
+    total double check (total > 0),
     user_id varchar(20),
     PRIMARY KEY (order_id),
     foreign key (user_id) references users (user_id)
@@ -61,9 +61,9 @@ CREATE TABLE product (
     category_id int(11),
     manufacturer_id int(11),
     product_name varchar(100),
-    price double,
+    price double check (quantity > 0),
     product_description text,
-    quantity int(11),
+    quantity int(11) check (quantity > 0),
     PRIMARY KEY (product_id),
     foreign key (category_id) references category (Category_id)
         on delete set null,
@@ -76,7 +76,7 @@ CREATE TABLE product (
 CREATE TABLE order_items (
     product_id int(11),
     order_id int(11),
-    order_quantity int(11) DEFAULT '0',
+    order_quantity int(11) check (order_quantity > 0),
     price double,
     foreign key (product_id) references product (product_id)
         on delete set null,
