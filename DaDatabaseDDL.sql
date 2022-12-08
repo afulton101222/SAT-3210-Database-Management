@@ -76,7 +76,7 @@ CREATE TABLE product (
 CREATE TABLE order_items (
     product_id int(11),
     order_id int(11),
-    quantity int(11) DEFAULT '0',
+    order_quantity int(11) DEFAULT '0',
     price double,
     foreign key (product_id) references product (product_id)
         on delete set null,
