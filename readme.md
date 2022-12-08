@@ -1,5 +1,4 @@
-# Metatag
-
+# SAT 3210 Database Management Course Project Readme
 
 ## Table of contents
 
@@ -11,7 +10,6 @@
 - Troubleshooting
 - FAQ
 - Maintainers
-
 
 
 ## Introduction

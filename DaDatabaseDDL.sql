@@ -14,7 +14,7 @@ USE EconoFoods;
 
 -- Create Users Table
 
-CREATE TABLE Users (
+CREATE TABLE users (
     user_id varchar(20),
     email_id varchar(100),
     password varchar(200),
@@ -27,59 +27,59 @@ CREATE TABLE Users (
 
 -- Create Category Table
 
-CREATE TABLE Category (
-    Category_id int(11),
-    Category_Name varchar(100),
-    PRIMARY KEY (Category_id)
+CREATE TABLE category (
+    category_id int(11),
+    category_name varchar(100),
+    PRIMARY KEY (category_id)
 );
 
 -- Create Orders Table
 
-CREATE TABLE Orders (
-    Order_id int(11),
-    Order_time datetime,
-    Total double DEFAULT '0',
+CREATE TABLE orders (
+    order_id int(11),
+    order_time datetime,
+    total double DEFAULT '0',
     user_id varchar(20),
-    PRIMARY KEY (Order_id),
-    foreign key (user_id) references Users (user_id)
+    PRIMARY KEY (order_id),
+    foreign key (user_id) references users (user_id)
         on delete set null
 );
 -- Create Manufacturer Table
 
-CREATE TABLE Manufacturer (
-    Manufacturer_id int(11),
-    Manufacturer_Name varchar(100),
-    contact_Name varchar(100),
+CREATE TABLE manufacturer (
+    manufacturer_id int(11),
+    manufacturer_name varchar(100),
+    contact_name varchar(100),
     email varchar(100),
     phone_number varchar(100),
-    PRIMARY KEY (Manufacturer_id, phone_number)
+    PRIMARY KEY (manufacturer_id, phone_number)
 );
 -- Create Product Table
 
-CREATE TABLE Product (
-    Product_id int(11),
-    Product_name varchar(100),
-    Quantity int(11),
-    Category_id int(11),
-    Price double,
-    Product_description text,
-    Manufacturer_id int(11),
-    PRIMARY KEY (Product_id),
-    foreign key (Category_id) references Category (Category_id)
+CREATE TABLE product (
+    product_id int(11),
+    product_name varchar(100),
+    quantity int(11),
+    category_id int(11),
+    price double,
+    product_description text,
+    manufacturer_id int(11),
+    PRIMARY KEY (product_id),
+    foreign key (category_id) references category (Category_id)
         on delete set null,
-    foreign key (Manufacturer_id) references Manufacturer (Manufacturer_id)
+    foreign key (manufacturer_id) references manufacturer (manufacturer_id)
         on delete set null
 );
 
 -- Create Order_Items Table
 
-CREATE TABLE Order_Items (
-    Product_id int(11),
-    Order_id int(11),
-    Quantity int(11) DEFAULT '0',
+CREATE TABLE order_Items (
+    product_id int(11),
+    order_id int(11),
+    quantity int(11) DEFAULT '0',
     price double,
-    foreign key (Product_id) references Product (Product_id)
+    foreign key (product_id) references product (product_id)
         on delete set null,
-    foreign key (Order_id) references Orders (Order_id)
+    foreign key (order_id) references orders (order_id)
         on delete set null
 );
