@@ -1,5 +1,13 @@
 INSERT INTO Users (user_id, email_id, password, first_name, last_name, phone, Role) VALUES
 ('11111328', 'zcheimer@mtu.edu', 'P@ssw0rd', 'Zach', 'Heimer', 507-884-7221, 'Employee');
+INSERT INTO Users (user_id, email_id, password, first_name, last_name, phone, Role) VALUES
+('11111329', 'zcheimer1@mtu.edu', 'P@ssw0rd', 'Zach1', 'Heimer', 507-884-7221, 'Customer');
+INSERT INTO Users (user_id, email_id, password, first_name, last_name, phone, Role) VALUES
+('11111330', 'zcheimer2@mtu.edu', 'P@ssw0rd', 'Zach2', 'Heimer', 507-884-7221, 'Customer');
+INSERT INTO Users (user_id, email_id, password, first_name, last_name, phone, Role) VALUES
+('11111331', 'zcheimer3@mtu.edu', 'P@ssw0rd', 'Zach3', 'Heimer', 507-884-7221, 'Customer');
+INSERT INTO Users (user_id, email_id, password, first_name, last_name, phone, Role) VALUES
+('11111332', 'zcheimer4@mtu.edu', 'P@ssw0rd', 'Zach4', 'Heimer', 507-884-7221, 'Customer');
 
 INSERT INTO Category VALUES (1, 'Fruit');
 INSERT INTO Category VALUES (2, 'Vegetable');
@@ -12,6 +20,13 @@ INSERT INTO Category VALUES (7, 'Beverage');
 
 
 INSERT INTO Orders VALUES (1, '2022-11-12 19:28:00', 9.38, 11111328);
+INSERT INTO Orders VALUES (2, '2022-11-12 19:28:00', 9.38, 11111329);
+INSERT INTO Orders VALUES (3, '2022-11-12 19:28:00', 9.38, 11111330);
+INSERT INTO Orders VALUES (4, '2022-11-12 19:28:00', 9.38, 11111331);
+INSERT INTO Orders VALUES (5, '2022-11-12 19:28:00', 9.38, 11111332);
+INSERT INTO Orders VALUES (6, '2022-11-12 19:28:00', 9.38, 11111333);
+
+
 
 
 INSERT INTO Manufacturer VALUES (1, 'Fruit Co.', 'Samantha Jones', 'samantha.jones@fruitco.com', '555-555-1232');
@@ -65,4 +80,39 @@ INSERT INTO Product VALUES (30, 7, 12, 'Juice', 2.99, 'Orange juice', 42);
 
 INSERT INTO Order_Items VALUES(1, 1, 5, 4);
 INSERT INTO Order_Items VALUES(3, 1, 3, 10);
-INSERT INTO order_items VALUES(27, 1, 50, 4);
+INSERT INTO order_items VALUES(2, 1, 50, 4);
+INSERT INTO order_items VALUES(29, 1, 50, 4);
+INSERT INTO Order_Items VALUES(1, 2, 5, 4);
+INSERT INTO Order_Items VALUES(3, 2, 3, 10);
+INSERT INTO order_items VALUES(27, 2, 50, 4);
+INSERT INTO Order_Items VALUES(29, 2, 5, 4);
+INSERT INTO Order_Items VALUES(3, 3, 3, 10);
+INSERT INTO order_items VALUES(29, 3, 50, 4);
+INSERT INTO Order_Items VALUES(1, 3, 5, 4);
+INSERT INTO Order_Items VALUES(3, 3, 3, 10);
+INSERT INTO order_items VALUES(27, 3, 50, 4);
+INSERT INTO Order_Items VALUES(1, 4, 5, 4);
+INSERT INTO Order_Items VALUES(3, 4, 3, 10);
+INSERT INTO order_items VALUES(27, 5, 50, 4);
+INSERT INTO Order_Items VALUES(7, 5, 5, 4);
+INSERT INTO Order_Items VALUES(4, 6, 3, 10);
+INSERT INTO order_items VALUES(29, 6, 50, 4);
+INSERT INTO Order_Items VALUES(1, 1, 5, 4);
+INSERT INTO Order_Items VALUES(2, 1, 3, 10);
+INSERT INTO order_items VALUES(3, 1, 50, 4);
+INSERT INTO order_items VALUES(4, 1, 50, 4);
+INSERT INTO Order_Items VALUES(5, 2, 5, 4);
+INSERT INTO Order_Items VALUES(6, 2, 3, 10);
+INSERT INTO order_items VALUES(7, 2, 50, 4);
+INSERT INTO Order_Items VALUES(8, 2, 5, 4);
+INSERT INTO Order_Items VALUES(9, 3, 3, 10);
+INSERT INTO order_items VALUES(10, 3, 50, 4);
+INSERT INTO Order_Items VALUES(11, 3, 5, 4);
+INSERT INTO Order_Items VALUES(12, 3, 3, 10);
+INSERT INTO order_items VALUES(13, 3, 50, 4);
+INSERT INTO Order_Items VALUES(14, 4, 5, 4);
+INSERT INTO Order_Items VALUES(15, 4, 3, 10);
+INSERT INTO order_items VALUES(16, 5, 50, 4);
+INSERT INTO Order_Items VALUES(17, 5, 5, 4);
+INSERT INTO Order_Items VALUES(18, 6, 3, 10);
+INSERT INTO order_items VALUES(29, 6, 50, 4);
