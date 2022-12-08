@@ -58,12 +58,12 @@ CREATE TABLE manufacturer (
 
 CREATE TABLE product (
     product_id int(11),
-    product_name varchar(100),
-    quantity int(11),
     category_id int(11),
+    manufacturer_id int(11),
+    product_name varchar(100),
     price double,
     product_description text,
-    manufacturer_id int(11),
+    quantity int(11),
     PRIMARY KEY (product_id),
     foreign key (category_id) references category (Category_id)
         on delete set null,
