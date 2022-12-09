@@ -1,15 +1,27 @@
 INSERT INTO Users (user_id, email_id, password, first_name, last_name, phone, Role) VALUES
 ('11111328', 'zcheimer@mtu.edu', 'P@ssw0rd', 'Zach', 'Heimer', 507-884-7221, 'Employee');
+DROP User IF EXISTS '11111328'@'localhost';
+CREATE User '11111328'@'localhost' IDENTIFIED BY 'P@ssw0rd';
 INSERT INTO Users (user_id, email_id, password, first_name, last_name, phone, Role) VALUES
 ('11111329', 'zcheimer1@mtu.edu', 'P@ssw0rd', 'Zach1', 'Heimer', 507-884-7221, 'Customer');
+DROP User IF EXISTS '11111328'@'localhost';
+CREATE User '11111329'@'localhost' IDENTIFIED BY 'P@ssw0rd';
 INSERT INTO Users (user_id, email_id, password, first_name, last_name, phone, Role) VALUES
 ('11111330', 'zcheimer2@mtu.edu', 'P@ssw0rd', 'Zach2', 'Heimer', 507-884-7221, 'Customer');
+DROP User IF EXISTS '11111328'@'localhost';
+CREATE User '11111330'@'localhost' IDENTIFIED BY 'P@ssw0rd';
 INSERT INTO Users (user_id, email_id, password, first_name, last_name, phone, Role) VALUES
 ('11111331', 'zcheimer3@mtu.edu', 'P@ssw0rd', 'Zach3', 'Heimer', 507-884-7221, 'Customer');
+DROP User IF EXISTS '11111328'@'localhost';
+CREATE User '11111331'@'localhost' IDENTIFIED BY 'P@ssw0rd';
 INSERT INTO Users (user_id, email_id, password, first_name, last_name, phone, Role) VALUES
 ('11111332', 'zcheimer4@mtu.edu', 'P@ssw0rd', 'Zach4', 'Heimer', 507-884-7221, 'Customer');
+DROP User IF EXISTS '11111328'@'localhost';
+CREATE User '11111332'@'localhost' IDENTIFIED BY 'P@ssw0rd';
 INSERT INTO Users (user_id, email_id, password, first_name, last_name, phone, Role) VALUES
 ('11111333', 'zcheimer5@mtu.edu', 'P@ssw0rd', 'Zach5', 'Heimer', 507-884-7221, 'Customer');
+DROP User IF EXISTS '11111328'@'localhost';
+CREATE User '11111333'@'localhost' IDENTIFIED BY 'P@ssw0rd';
 
 
 

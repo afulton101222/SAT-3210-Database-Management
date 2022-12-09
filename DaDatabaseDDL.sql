@@ -1,13 +1,12 @@
 -- Remove Existing Database For Testing Puropses
 DROP DATABASE IF EXISTS EconoFoods;
--- Create Database EconoFoods
+-- Create EconoFoods
 CREATE DATABASE EconoFoods;
--- Create EconoFoods Admin User On the Database
-DROP User IF EXISTS 'EFadmin'@'localhost'; 
-CREATE User 'EFadmin'@'localhost' IDENTIFIED BY 'EFadminPass';
-GRANT ALL ON EconoFoods.* TO 'EFadmin'@'localhost';
-FLUSH PRIVILEGES;
--- Use the newly created Database 
+-- Create Roles
+DROP Role IF EXISTS 'Employee';
+DROP Role IF EXISTS 'Customer';
+DROP Role IF EXISTS 'Anonymous';
+-- Use da Database 
 USE EconoFoods;
 
 -- --------------------------------------------------------------------------------------------------------------------------------
@@ -84,3 +83,12 @@ CREATE TABLE order_items (
         on delete set null
 );
 
+-- --------------------------------------------------------------------------------------------------------------------------------
+
+-- Role Creation
+
+CREATE Role 'Employee', 'Customer', 'Anonymous';
+GRANT ALL ON EconoFoods.* TO 'Employee';
+GRANT SELECT ON EconoFoods.Product TO 'Customer';
+GRANT SELECT ON EconoFoods.Product TO 'Anonymous';
+GRANT INSERT, UPDATE, ALTER ON EconoFoods.Orders TO 'Customer';
