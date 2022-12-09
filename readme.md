@@ -36,7 +36,7 @@ See DaDatabaseDDL.sql for roles.
 
 ## Requirment 5
 ### Python Functions 
-Python functions are located in the `Course Project Python.ipynb`
+Python functions are located in the `Course Project Python.ipynb` file
 
 
 ## Contributors
