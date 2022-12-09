@@ -9,12 +9,9 @@ INSERT INTO Users (user_id, email_id, password, first_name, last_name, phone, Ro
 INSERT INTO Users (user_id, email_id, password, first_name, last_name, phone, Role) VALUES
 ('11111332', 'zcheimer4@mtu.edu', 'P@ssw0rd', 'Zach4', 'Heimer', 507-884-7221, 'Customer');
 INSERT INTO Users (user_id, email_id, password, first_name, last_name, phone, Role) VALUES
-<<<<<<< Updated upstream
-('11111333', 'zcheimer4@mtu.edu', 'P@ssw0rd', 'Zach5', 'Heimer', 507-884-7221, 'Customer');
-=======
 ('11111333', 'zcheimer5@mtu.edu', 'P@ssw0rd', 'Zach5', 'Heimer', 507-884-7221, 'Customer');
 
->>>>>>> Stashed changes
+
 
 INSERT INTO Category VALUES (1, 'Fruit');
 INSERT INTO Category VALUES (2, 'Vegetable');
