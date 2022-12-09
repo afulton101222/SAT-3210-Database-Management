@@ -1,39 +1,29 @@
 # SAT 3210 Database Management Course Project Readme
 
-## Table of contents
+## Requirment 1
 
-- Introduction
-- Requirements
-- Files
-- Installation
-- Configuration
-- Troubleshooting
-- FAQ
-- Maintainers
+Requirment 1 deliverables are located in the attached
+- Database Project Paper.pdf (Part a and b)
+- DaDatabaseDDL.sql (Part C)
 
+## Requirment 2
 
-## Introduction
+Requirment 2 deliverables are located in the attached
+- insert.sql
 
+## Requirment 3
 
-## Requirements
+Requirment 3 deliverables are located in the attached
+- Database Project Paper.pdf
 
+## Requirment 4
 
-## Files
+- idk
 
+## Requirment 5
 
-## Installation
-
-
-## Configuration
-
-
-## Troubleshooting
-
-
-## FAQ
-
-
-## Maintainers
+Requirment 5 deliverables are located in the attached
+- CourseProject Python 1.ipynb
 
 - Adam Fulton   - adfulton@mtu.edu
 - Zach Heimer   - zcheimer@mtu.edu
