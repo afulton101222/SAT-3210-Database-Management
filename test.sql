@@ -1,3 +1,2 @@
-SELECT COUNT(quantity) AS 'Total Products' FROM Product;
-
-SELECT Product_name FROM Product NATURAL JOIN Order_Items GROUP BY Product_id ORDER BY Quantity DESC LIMIT 20;
+-- SELECT SUM(quantity) AS 'Total Products' FROM product;
+SELECT COUNT(category_name) AS 'Total Types of Products' From category
