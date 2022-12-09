@@ -12,15 +12,22 @@ cnx = mysql.connector.connect(
 # Create a cursor
 cursor = cnx.cursor()
 
-# Retrieve the role of a user with user ID "abc123"
+# Ask the user for their user ID and password
+print("Enter your user ID:")
+user_id = input()
+
+print("Enter your password:")
+password = input()
+
+# Retrieve the role of the user with the given user ID and password
 query = """
 SELECT Role
 FROM users
-WHERE user_id = 'abc123'
+WHERE user_id = %s AND password = %s
 """
 
-# Execute the query
-cursor.execute(query)
+# Execute the query, passing in the user ID and password as parameters
+cursor.execute(query, (user_id, password))
 
 # Store the result in a variable
 result = cursor.fetchone()
