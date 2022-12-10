@@ -35,7 +35,7 @@ CREATE TABLE category (
 -- Create Orders Table
 
 CREATE TABLE orders (
-    order_id int(11),
+    order_id int(11) DEFAULT 0,
     order_time datetime,
     total double check (total > 0),
     user_id varchar(20),
