@@ -14,7 +14,7 @@ try:
     cnx = mysql.connector.connect(host='localhost', database=database, user=user_name, password=password)
     if cnx.is_connected():
         # Create a cursor
-        cursor = cnx.cursor(buffered=True)
+        cursor = cnx.cursor(prepared=True)
         db_Info = cnx.get_server_info()
         print("Connected to MySQL Server version ", db_Info)
         cursor.execute("select database();")
