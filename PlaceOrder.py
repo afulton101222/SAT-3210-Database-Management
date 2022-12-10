@@ -1,5 +1,4 @@
 # Import the mysql.connector module
-import datetime
 import mysql.connector
 from mysql.connector import Error
 
@@ -20,33 +19,20 @@ try:
         cursor.execute("select database();")
         record = cursor.fetchone()
         print("You're connected to database: ", record)
-
-
-        #aquire current date and format correctly
-       # when = datetime.now()
-       # when = when.strftime('%m%d%y')
-
         #Get avaliable order ID
         query = 'SELECT MAX(order_id) FROM orders'
         cursor.execute(query)
         lastOrderId = cursor.fetchone() [0]
         avaliabileOrderId = lastOrderId + 1 if lastOrderId else 1
-
-
         # Ask the user for their user ID and password
         print("Enter your user ID:")
         user_id = input()
         print("Enter your password:")
         password = input()
-
         # Retrieve the role of the user with the given user ID and password
         query = "SELECT Role FROM users WHERE user_id = %s AND password = %s"
-
-
-
         # Execute the query, passing in the user ID and password as parameters
         cursor.execute(query, (user_id, password))
-
         # Store the result in a variable
         result = cursor.fetchone()
         # Check the user's role
@@ -67,12 +53,7 @@ try:
                 query = 'SELECT quantity FROM product WHERE product_id LIKE %s'
                 cursor.execute(query, (item,))
                 quantityAvaliable = cursor.fetchone()
-                #intquantityAvalaible = int (quantityAvaliable)
                 print (quantityAvaliable)
-
-               # query = 'SELECT product_name FROM product WHERE product_id LIKE %s'
-               # cursor.execute(query, (item))
-               # productName = cursor.fetchone
 
                 orderQuantity = input ('how many would you like to order?')
                 
