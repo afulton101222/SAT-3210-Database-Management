@@ -35,7 +35,7 @@ CREATE TABLE category (
 -- Create Orders Table
 
 CREATE TABLE orders (
-    order_id int(11) DEFAULT 0,
+    order_id int(11) ,
     order_time datetime,
     total double check (total > 0),
     user_id varchar(20),
@@ -56,7 +56,7 @@ CREATE TABLE manufacturer (
 -- Create Product Table
 
 CREATE TABLE product (
-    product_id int(11),
+    product_id varchar(11),
     category_id int(11),
     manufacturer_id int(11),
     product_name varchar(100),
@@ -73,7 +73,7 @@ CREATE TABLE product (
 -- Create Order_Items Table
 
 CREATE TABLE order_items (
-    product_id int(11),
+    product_id varchar(11),
     order_id int(11),
     order_quantity int(11) check (order_quantity > 0),
     price double,
