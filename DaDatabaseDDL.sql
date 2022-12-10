@@ -92,3 +92,5 @@ GRANT ALL ON EconoFoods.* TO 'Employee';
 GRANT SELECT ON EconoFoods.Product TO 'Customer';
 GRANT SELECT ON EconoFoods.Product TO 'Anonymous';
 GRANT INSERT, UPDATE, ALTER ON EconoFoods.Orders TO 'Customer';
+
+set @@sql_mode = 'STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
